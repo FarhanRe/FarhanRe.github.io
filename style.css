@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+*,
+html
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Orbitron', sans-serif;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
+  }
+
+
+:root {
+   --bg-primary:rgb(0, 91, 17);
+   --bg-secondary:#eaeaea;
+   --text-primary:#f7f7f7;
+   --txt-secondary:#222222;
+   --icon-bg-primary: rgb(53, 53, 53);
+   --icon-bg-secondary: #777777;
+}
+
+.image{
+    margin-top: 130px;
+    width: 200px;
+}
+
+.container {
+   display: block;
+   width: 100%;
+   height: auto;
+   min-height: 100vh;
+   background-color: var(--bg-primary);
+}
+
+.home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrappermulai {
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.cardmenu {
+   width: 300px;
+   height: 200px;
+   border-radius: 10px;
+   border: 1px solid white;
+   background-color: var(--bg-secondary);
+   color: var(--txt-secondary);
+   padding: 32px;
+   margin: 8px;
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+   width: 40%;
+   border-radius: 10px;
+   border: 1px solid white;
+   background-color: var(--bg-secondary);
+   color: var(--txt-secondary);
+   padding: 32px;
+   margin: 8px;
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+   text-align: center;
+}
+
+.text-left {
+   text-align: start
+   ;
+}
+
+.titlehome {
+   font-size: 2em;
+   color: var(--text-primary);
+}
+
+.title {
+   margin-top: 40px;
+   font-size: 2em;
+}
+
+.titledesc {
+   margin-top: 10px;
+   font-size: 2em;
+}
+
+.icons {
+   margin-top: 8px;
+   font-size: 24px;
+   color: var(--icon-bg-primary);
+}
+
+.description {
+   margin-top: 8px;
+   font-size:.8em ;
+}
+
+.btn {
+   margin-top: 16px;
+   padding: 8px;
+   cursor: pointer;
+   border: none;
+   width: 100%;
+}
+.btnmulai{
+   font-size: large;
+   margin-top: 90px;
+   padding: 8px;
+   cursor: pointer;
+   border: none;
+   width: 15%;
+   height: 50px;
+   border-radius: 15px;
+   }
+
+.btn:hover {
+   background-color: var(--bg-primary);
+   color: var(--text-primary);
+   -ms-transform: rotate(2deg);
+   transform: rotate(2deg);
+   transition: .3s ease-in-out;
+}
+
+.btnmulai:hover {
+   background-color: var(--bg-primary);
+   color: var(--text-primary);
+   -ms-transform: rotate(2deg);
+   transform: rotate(2deg);
+   transition: .3s ease-in-out;
+}
+
+.container2 {
+   display: none;
+}
+
+@media screen and (max-width: 476px) {
+   .container {
+      background-color: #ffffff;
+   }
+
+   .card {
+      width: 95%;
+   }
+
+   .title {
+      font-size: 3em;
+   }
+
+   .icons {
+      font-size: 2em;
+   }
+
+   .description {
+      font-size: 1.5em;
+   }
+   .btn {
+      padding: 16px;
+      font-size: 1.5em;
+   }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+   .container {
+      display: none;
+   }
+
+   .container2 {
+      display: block;
+   }
+}
+
+.bthome  {
+   width: 20%;
+   border: 1px solid white;
+   border-radius: 15px;
+   background-color: var(--bg-secondary);
+   color: var(--txt-secondary);
+   padding: 20px;
+   margin: 8px;
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btnhome {
+   margin-top: 16px;
+   padding: 8px;
+   cursor: pointer;
+   border: none;
+   width: 200px;
+   background-color: var(--bg-secondary);
+   color: var(--txt-secondary);
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btnback {
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   cursor: pointer;
+   background-color: var(--bg-secondary);
+   color: var(--txt-secondary);
+   align-content  : center;
+   padding: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.border {
+   border-radius: 5px;
+}
+
+.btnback:hover {
+   background-color: var(--bg-primary);
+   color: var(--text-primary);
+   transition: .3s ease-in-out;
+}
+.btnhome:hover {
+   background-color: var(--bg-primary);
+   color: var(--text-primary);
+   transition: .3s ease-in-out;
+}
+
+.glow {
+   font-size: 80px;
+   color: #fff;
+   text-align: center;
+   animation: glow 1s ease-in-out infinite alternate;
+ }
+ 
+ @keyframes glow {
+   from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #116300, 0 0 40px #116300, 0 0 50px #116300, 0 0 60px #116300, 0 0 70px #116300;
+   }
+   
+   to {
+     text-shadow: 0 0 20px #fff, 0 0 30px #189300, 0 0 40px #189300, 0 0 50px #189300, 0 0 60px #189300, 0 0 70px #189300, 0 0 80px #189300;
+   }
+ }
